@@ -1,7 +1,7 @@
 # WebServerConfiguration
 Tools to setup pretty secure webserver
 
-`
+```
 # Réinitialiser les règles existantes
 sudo iptables -F
 sudo iptables -t nat -F
@@ -29,4 +29,4 @@ sudo iptables -P FORWARD DROP
 sudo iptables -A OUTPUT -o lo -j ACCEPT
 sudo iptables -A OUTPUT -d 192.168.1.0/24 -j DROP
 sudo iptables -A OUTPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
-`
+```
